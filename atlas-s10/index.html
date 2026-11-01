@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATLAS spike S-10</title>
+<style>body{font-family:system-ui,sans-serif;max-width:32rem;margin:2rem auto;padding:0 1rem;line-height:1.5}a.b{display:block;padding:.9rem;margin:.6rem 0;background:#1565c0;color:#fff;text-align:center;border-radius:.4rem;text-decoration:none}</style>
+</head>
+<body>
+<h1>ATLAS spike S-10</h1>
+<p>Test page for a shop QR. If the ATLAS test app is installed and the link is verified, Android opens the app instead of showing this page.</p>
+<p>You are seeing the web page, so either the app is not installed or the link was opened in a browser that does not hand it over.</p>
+<a class="b" id="store" href="https://play.google.com/store/apps/details?id=com.atlasspike.s3">Get the app (store listing: placeholder, not published)</a>
+<p id="shop"></p>
+<script>document.getElementById("shop").textContent = "Shop code in this link: " + (new URLSearchParams(location.search).get("shop") || "none");</script>
+</body>
+</html>
